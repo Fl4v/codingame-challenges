@@ -17,8 +17,8 @@ func main() {
 	thorY = initialTY
 
 	for {
-		//var remainingTurns int
-		//fmt.Scan(&remainingTurns)
+		var remainingTurns int
+		fmt.Scan(&remainingTurns)
 
 		directionX = ""
 		directionY = ""
@@ -37,9 +37,12 @@ func main() {
 			directionY = "S"
 			thorY++
 		}
-		fmt.Println(directionY+directionX, thorX, thorY)
+
+		fmt.Println(directionY + directionX)
+		/* For testin locally
 		if thorX == lightX && thorY == lightY {
 			break
 		}
+		*/
 	}
 }
